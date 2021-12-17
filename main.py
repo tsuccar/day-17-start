@@ -4,7 +4,7 @@ from quiz_brain import QuizBrain
 
 question_bank =[]
 for each in question_data:
-		question_bank.append(Question(each["text"],each['answer']))
+		question_bank.append(Question(each["question"],each['correct_answer']))
 		
 quiz_brain = QuizBrain(question_bank)
 while quiz_brain.still_has_questions():
